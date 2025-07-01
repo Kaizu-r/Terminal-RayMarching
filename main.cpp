@@ -1,5 +1,14 @@
 #include <iostream>
+#include "headers/screen.hpp"
+#include "src/screen.cpp"
 
-void main(){
-    std::cout << "Hello world" <<std::endl;
+int main(){
+    Screen screen(8, 8);
+    screen.resetPixels();
+
+
+    std::cout <<screen.pixels << std::endl;
+    //screen.draw();
+
+    return 0;
 }
